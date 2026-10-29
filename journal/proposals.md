@@ -4627,3 +4627,14 @@ against this cycle's live lease (contrary to its own tick-type rule) and clobber
   22:16Z.
 - **P9, P4, P7, subclass auto-tagger, P1, P2, P3(a), counterfactual end-date: Status: unchanged
   (PROPOSED).**
+
+## 2026-10-29 13:4xZ (FULL, cloud): forecast.py accepts a wrong-frame rule value and then blocks the fix
+
+`642b05864920` (Trump SC Transgender 7+, outcome No, raw 0.455) was recorded with
+`--rule rally-below-mid --est-prob 0.62`: I passed the Yes-frame mid where the No-frame mid
+(0.37) belonged. est_prob (raw) is right, but the shadow `rule_prob` is wrong, so the paired
+raw-vs-rule test for `rally-below-mid` gets one corrupted row. `--supersede` refuses because
+est_prob did not change. Proposal: forecast.py could check that a `--rule` value sits on the
+book's mid side (|rule_prob - mid_at_record| small for set-to-mid rules) and refuse otherwise,
+or allow a supersede whose only change is rule_prob. Until then, please treat this row's
+rule_prob as 0.37 or exclude it from the rally-below-mid grade.
