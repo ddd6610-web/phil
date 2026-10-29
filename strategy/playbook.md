@@ -8201,3 +8201,14 @@ with the one-liner in journal/retros/DEEP-2026-10-21.md.
 
   The no-bet streak is the opportunity set, not a research defect. Do not loosen min_edge or
   spread gates to "use" this edge.
+
+## 2026-10-29 13:40Z: LLY Q3 beat WSV row settled No (RETRO-20261029-1340)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| LLY non-GAAP EPS > 7.49 (`089fccd4eada`, WSV, earnings-mid shadow 0.53) | 0.62/0.48 | Yes | +0.07 vs ask 0.55 | No | -5.00 |
+
+  Totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`, overall line):
+  163 settled declined rows, 140 fillable, 71W/69L, CF -$70.91. Side split for this row:
+  Yes 0W/1L -5.00. Beat-size priors from charge-free quarters do not transfer to a quarter
+  with a pre-announced IPR&D hit; record raw anyway and let `earnings-mid` be graded.
