@@ -8212,3 +8212,20 @@ with the one-liner in journal/retros/DEEP-2026-10-21.md.
   163 settled declined rows, 140 fillable, 71W/69L, CF -$70.91. Side split for this row:
   Yes 0W/1L -5.00. Beat-size priors from charge-free quarters do not transfer to a quarter
   with a pre-announced IPR&D hit; record raw anyway and let `earnings-mid` be graded.
+
+## 2026-10-30 00:05Z: WSV rows settled (RETRO-20261030-0005)
+
+| Row | own/mkt | Side | Edge | Result | CF pnl |
+|---|---|---|---|---|---|
+| Saudi action vs Yemen Sep 23 (`ecca0a61ca2c`, WSV) | 0.50/0.56 | No | -0.33 (tool) | Yes | -5.00 |
+| Alberta Leave wins any division (`a99903a45e08`, WSV) | 0.58/0.75 | No | -0.07 | Yes | refused (time gate) |
+| Trump "Hormuz"/"Blockade" Rock Hill (`416ed2cc383d`, WSV, rally-below-mid shadow) | 0.67/0.77 | No | +0.063 | Yes | -5.00 |
+| SNDK beat (`48613fdf6fdb`, WSV, earnings-mid shadow) | 0.66/0.52 | Yes | -0.18 (tool) | Yes | +0.95 |
+
+  Totals (`core/counterfactual.py ledger --skip-reason wide-spread-veto`, overall line):
+  167 settled declined rows, 143 fillable, 72W/71L, CF -$79.96. Side split: no 36W/46L -123.03,
+  yes 36W/25L +43.07. This tick: No 0W/2L -10.00, Yes 1W/0L +0.95.
+  Evidence note (one event, three correlated rows, NOT a rule): on "Leave/X wins ANY of N
+  districts" markets I under-read three times (0.32/0.50/0.58 vs mids 0.39-0.75; Leave carried
+  a division). A province-wide margin does not bound the most extreme district; treat
+  any-of-N as a max over dispersed units and do not lean below the mid on margin alone.
