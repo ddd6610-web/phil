@@ -4638,3 +4638,16 @@ est_prob did not change. Proposal: forecast.py could check that a `--rule` value
 book's mid side (|rule_prob - mid_at_record| small for set-to-mid rules) and refuse otherwise,
 or allow a supersede whose only change is rule_prob. Until then, please treat this row's
 rule_prob as 0.37 or exclude it from the rally-below-mid grade.
+
+## 2026-10-31 00:2xZ (FULL, cloud): research channels unreachable on this runner
+
+Symptom, one cycle: every measured-feed candidate escalated by the screener had no reachable
+benchmark. Egress proxy `connect_rejected` / 403 on: api.binance.com, api.exchange.coinbase.com,
+api.kraken.com, api.coingecko.com (BTC touch 6236217), gasprices.aaa.com (AAA gas 6420971),
+bonbast.com (rial 5166883), services9.arcgis.com (IMF PortWatch, Bab el-Mandeb 5166819, a
+validated feed in the playbook since 2026-09-30). `core/odds.py` reports "no ODDS_API_KEY in env"
+(sports rows: Kings-Grizzlies, Atletico, Benfica, Chelsea BTTS). Result: 7 of 15 escalated
+candidates were unresearchable and got no forecast. Cause sits in the environment network policy
+/ secrets (operator-owned), not in strategy/. Ask: re-allow these hosts and re-provision the
+odds key for the cloud runner, or confirm the narrowing is intended so discovery.py can stop
+surfacing feed-dependent shapes on cloud ticks.
