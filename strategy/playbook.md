@@ -24,7 +24,7 @@ stores YOUR raw estimate as est_prob and that raw value is what a bet is sized o
 `core/score.py` promotes (PASS, >=20 events, 99.5% paired CI below zero) or retires (FAIL) a
 rule. Quote score.py's rule line when judging one. **No hand tallies for these rules in this
 file any more** — the "re-grade at n=X", "tally n=Y" clauses attached to them below are void.
-Budget 6. Since #14 merged (2026-10-22 ~23:48Z) the 00:12/02:12/04:12Z FULLs recorded 35
+Budget 6 (all six slugged as of RETRO-20261110-0010; free one by retiring before adding). Since #14 merged (2026-10-22 ~23:48Z) the 00:12/02:12/04:12Z FULLs recorded 35
 forecast rows and tagged 0 (score.py `rules: {}`): no rule had a slug. Now five do.
 
 | slug | applies to | raw | rule value | source |
@@ -34,7 +34,7 @@ forecast rows and tagged 0 (score.py `rules: {}`): no rule had a slug. Now five 
 | `earnings-mid` | earnings-beat rows with no issuer primary-source datapoint dated after the line was set | your estimate | clipped to mid +/-0.05 | RETRO-20261022-1430 |
 | `views-decay-mid` | multi-day view/count projections with fewer than 2 measured day-over-day decay ratios | your projection | clipped to mid +/-0.05 | RETRO-20261022-1620 |
 | `rally-below-mid` | Trump/Vance rally say-the-word reads (market-series, judgment) that sit BELOW the CLOB mid; not speaker-only transcript counts | your raw read | CLOB mid | NC-revert pre-registration (+0.20 threshold): SC+IA+FL below-mid raw n=20, +0.750 vs mid, RETRO-20261023-2215 (FL was a partial rally; the completed FL legs moved the other way, RETRO-20261024-0015 - untagged, the GA tagged rows are the first scored evidence). DEEP-2026-10-24 recount: the 8 completed-FL below-mid rows (AI, Drill, SI, Fish, Space, Jacksonville, Filibuster, Hell 15+; RETRO-20261024-0015) sum -0.567, so the whole pre-registration pool is about +0.18, UNDER its own +0.20 threshold, and one Fish row (0.50/0.91 book, -0.337) carries much of the swing. Kept in shadow because shadow costs nothing (raw sizes bets); score.py decides |
-| (1 free) | | | | |
+| `ai-release-mid` | AI/product release-date rungs (by-date or exact-date) where no primary source (official post, docs/models page, named-exec statement) gives a date or shows the launch live | your leak/aggregator lean | CLOB mid | RETRO-20261110-0010 (1e54ba110988 Fable 5.2 by Nov19: own .40 vs mid .60, resolved Yes, dBrier +0.20; category forecasts n=52 dBrier +0.0562) |
 
 Consequences, stated once:
 - When raw equals the rule value (e.g. you already sat at the mid), record WITHOUT `--rule`
