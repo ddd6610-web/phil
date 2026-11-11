@@ -8234,3 +8234,16 @@ with the one-liner in journal/retros/DEEP-2026-10-21.md.
   districts" markets I under-read three times (0.32/0.50/0.58 vs mids 0.39-0.75; Leave carried
   a division). A province-wide margin does not bound the most extreme district; treat
   any-of-N as a max over dispersed units and do not lean below the mid on margin alone.
+
+## 2026-11-11 00:1xZ: same-family staged-access analog is the raw centre (RETRO-20261111-0010)
+
+  Estimator note (how the RAW estimate is formed, not a rule on top of it): Gemini 4 Carbon
+  (announced Oct 28, staged to cyber defenders/Fairwind, "GA as soon as possible") went public
+  on Nov 10, exactly the Argon Sep30->Oct13 13-day analog that 4 of the 8 research notes
+  computed themselves. All 8 rows (6365364 window, 6282800 by-Nov15, 6366825 exact Nov10)
+  then leaned BELOW that analog because "no primary date source", and all 8 lost to the price
+  (sum dBrier +1.57). When a same-lab, same-family staged-access -> GA precedent exists, centre
+  the raw read ON the analog date (window/by-date rungs containing it start at or above the
+  mid), and treat "no announced date" as the normal state of a staged release, not as evidence
+  of delay. Where no analog exists, `ai-release-mid` applies as registered. Evidence is one
+  event (correlated rows); score.py grades the category, not this note.
