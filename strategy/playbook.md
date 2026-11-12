@@ -7942,6 +7942,12 @@ reaches n>=40, reopen Yes-side bets only if the sum is <= -0.30. If the sum is a
 from the count: placeholder-mid rows (null bid; RETRO-20261021-0015 rule). Recompute
 with the one-liner in journal/retros/DEEP-2026-10-21.md.
 
+**Outcome (RETRO-20261112-0010): the permanence clause fired.** The one-liner reads
+n=50, sum +0.293 (above +0.20 at n>=30). The Yes-side say-the-word bet suspension is now
+PERMANENT pending a new, separately evidenced method (e.g. a counted transcript base
+rate per speaker/word). Forecast rows continue; the reopen test is closed. Latest
+contributor: CoreWeave "OpenAI" `1f7dca3d4b3a` (0.65 vs 0.455, No, +0.215).
+
 - RETRO-20261021-0620: the late-settling NC "SI" half-gap row `fe8d8fb1ac61` (0.77, raw 0.75,
   recorded mid 0.71, No) adds +0.089 half-gap / +0.058 raw. Rule-4 totals at n=12: half-gap
   -0.275, raw -0.543 vs mid, so the revert stands. SI rally series is now 6/9 (NC missed).
