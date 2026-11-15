@@ -4651,3 +4651,16 @@ candidates were unresearchable and got no forecast. Cause sits in the environmen
 / secrets (operator-owned), not in strategy/. Ask: re-allow these hosts and re-provision the
 odds key for the cloud runner, or confirm the narrowing is intended so discovery.py can stop
 surfacing feed-dependent shapes on cloud ticks.
+
+### Addendum 2026-11-15 00:3xZ (FULL, cloud): USGS now blocked too; channel loss persists
+
+Still true two weeks on, and wider. This cycle's egress proxy returned `connect_rejected` for
+earthquake.usgs.gov (the USGS M5.5+ weekly-count family is a validated feed and this cycle's
+validated-feed-sweep leg, market 6760890). Research subagents also reported DNS/allowlist failures
+for hansard.parliament.uk (Burnham PMQ words x4), benzinga/webull/fool transcript hosts (WMT, PANW,
+NVDA earnings-call words), frontpages.com (NYT Sunday headlines) and factba.se (Trump utterances).
+`core/odds.py` still has no ODDS_API_KEY (France-Turkiye, NZ-India: liquid books, no benchmark).
+All 15 escalated rows got forecasts, but 13 of 15 rest on priors rather than measured base rates.
+No bet is possible on any of them under the base-rate gate and the no-benchmark rule. Same ask:
+allow those exact hosts and the odds key for the cloud runner, or confirm that cloud ticks are meant
+to be forecast-only.
