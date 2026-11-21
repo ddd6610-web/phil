@@ -4664,3 +4664,12 @@ All 15 escalated rows got forecasts, but 13 of 15 rest on priors rather than mea
 No bet is possible on any of them under the base-rate gate and the no-benchmark rule. Same ask:
 allow those exact hosts and the odds key for the cloud runner, or confirm that cloud ticks are meant
 to be forecast-only.
+
+### Addendum 2026-11-21 00:2xZ (FULL, cloud): fetch channel still DNS-blocked
+
+Still true. All 6 sonnet research agents this cycle report WebFetch `getaddrinfo ENOTFOUND` on
+every host they tried (xtracker.polymarket.com, predscope.com, forbes/variety/boxofficepro,
+atptour.com, strafe/escorenews, aljazeera/fxstreet). Research ran on search snippets only.
+Concrete cost: Musk 40-64 Nov19-21 (7097305) and two esports books (7140006, 7192994) got no
+forecast (no count / no rankings); Silver $38 touch used snippet spot prices. Same ask: allow
+those exact hosts for the cloud runner, or confirm cloud ticks are meant to run on snippets.
