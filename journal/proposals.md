@@ -4673,3 +4673,13 @@ atptour.com, strafe/escorenews, aljazeera/fxstreet). Research ran on search snip
 Concrete cost: Musk 40-64 Nov19-21 (7097305) and two esports books (7140006, 7192994) got no
 forecast (no count / no rankings); Silver $38 touch used snippet spot prices. Same ask: allow
 those exact hosts for the cloud runner, or confirm cloud ticks are meant to run on snippets.
+
+### Addendum 2026-11-22 00:3xZ (FULL, cloud): channel loss persists, now costing validated-feed families
+Same proxy refusals as 11-15/11-21: earthquake.usgs.gov (403 "no rule allows this host"),
+services9.arcgis.com (PortWatch layer) and seismicportal.eu all unreachable from the cloud runner;
+core/odds.py still reports no ODDS_API_KEY. Concrete cost this tick: two validated-feed families
+escalated by the screener could not be read mechanically - USGS M5.5+ Nov16-22 >=10 (7023055,
+forecast centred near the book for lack of a count) and PortWatch Malacca Nov16-22 >=1600
+(7029629, no forecast, benchmark-unreachable) - and 5 soccer/NCAAB legs (Twente draw .065,
+Ajax, Paris FC, Atletico-Viking draw, Stetson-San Diego) got no book benchmark. Same ask: allow
+those exact hosts and the odds key for the cloud runner, or confirm cloud ticks are snippet-only.
